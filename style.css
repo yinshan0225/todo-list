@@ -1,0 +1,70 @@
+body{
+    background-color: #00c787;
+    display: flex;
+    justify-content: center;
+}
+.操作面板{
+    background-color: wheat;
+    width: 300px;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    /*水平偏移 垂直偏移 模糊半徑 顏色，建立陰影效果*/
+}
+
+.輸入區域{
+    display: flex;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.文字欄 {
+    flex-grow: 1;
+    /* 自動伸展填滿橫向空間 */
+    border:none;
+    background-color :#ffffff ;
+    padding: 10px 15px;
+    font-weight: bold;
+    outline:none;
+}
+
+.按鈕{
+    background-color: #00c787;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.清單{
+    list-style-type:none;
+    /* 移除清單原點 */
+    padding: 0;
+    /* 內距為0 */
+}
+
+/* 清單中各項目 */
+.清單 li{
+    display: flex;
+    padding: 10px;
+    /* 每列的上下內距調高 */
+    border-bottom: 1px solid #eee;
+    /* 底部加上水平細線 */
+}
+.清單 label{
+    flex-grow: 1;
+}
+.打勾方塊{
+    margin-right: 15px;
+}
+.垃圾桶{
+    border: none;
+    border-radius: 5px;
+    height:30px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.垃圾桶:hover{
+    opacity: 1;
+}
